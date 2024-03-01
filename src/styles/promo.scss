@@ -1,0 +1,85 @@
+.promo {
+  padding-bottom: 180px;
+
+  &__btn {
+    margin-bottom: 95px;
+    color: var(--color-black);
+    background-color: var(--color-red);
+  }
+
+  &__title {
+    margin: 90px 0 23px;
+  }
+
+  &__paragraph {
+    max-width: 55%;
+    margin: 0 0 63px;
+  }
+
+  &__island {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    font-size: 16px;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 30%);
+
+    &-text {
+      position: relative;
+      margin: 0;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        width: 10px;
+        height: 10px;
+        content: '';
+        background-color: #78C23E;
+        border-radius: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &-btn {
+      color: var(--color-red);
+      cursor: pointer;
+      background: transparent;
+      border: none;
+    }
+  }
+
+  &__close {
+    &-btn {
+      width: 40px;
+      height: 40px;
+      background-image: url("../images/close.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__discount {
+    &-btn {
+      position: relative;
+      padding: 10px 75px 10px 10px;
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        width: 50px;
+        height: 10px;
+        content: '';
+        background-image: url("../images/island-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import logoImage from "../images/logo.svg";
+---
+
+<header class="header">
+  <div class="header__container container">
+    <Image src={logoImage} alt="Логотип" />
+    <nav class="header__navbar navbar">
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Диагностика</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Стоимость</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Мастера</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Отзывы</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link">Вопросы</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="" class="header__location location">Альмьетьевск</a>
+      <button class="header__btn btn">Позвонить</button>
+    </div>
+  </div>
+</header>

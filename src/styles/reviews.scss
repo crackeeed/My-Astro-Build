@@ -1,0 +1,125 @@
+.reviews {
+  &__container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-size: 20px;
+
+    &-wrapper {
+      max-width: 454px;
+    }
+  }
+
+  &__slide {
+    &-wrapper {
+      padding: 40px;
+    }
+  }
+
+  &__info {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__rating {
+    font: 600 40px Jost, sans-serif;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__flex {
+    &-wrapper {
+      display: flex;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.slider {
+  &-wrapper {
+    max-width: 785px;
+  }
+}
+
+.swiper {
+  &-wrapper {
+    //padding-left: 132px;
+  }
+
+  &-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 468px;
+  }
+
+  &-button {
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      max-width: 130px;
+    }
+
+    &-next {
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/arrow.svg");
+      background-position: center;
+    }
+
+    &-prev {
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/arrow.svg");
+      background-position: center;
+      transform: scale(-1, 1);
+    }
+  }
+}
+
+@media (width <= 1150px) {
+  .slider {
+    &-wrapper {
+      width: 600px;
+    }
+  }
+
+  .reviews {
+    &__container {
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .slider {
+      &-wrapper {
+        order: 2;
+      }
+    }
+
+    .swiper {
+      &-wrapper {
+        padding-left: 0;
+      }
+
+      &-button {
+        &-wrapper {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          z-index: 3;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}

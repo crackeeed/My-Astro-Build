@@ -1,0 +1,68 @@
+.popular {
+  &__title {
+    &-wrapper {
+      max-width: 610px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &-item {
+    width: calc(100% / 3);
+    padding: 30px;
+
+    &__name-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-bottom: 66px;
+    }
+
+    &__top {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    &__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__position {
+      margin: 0 0 8px;
+      font: 500 20px Jost, sans-serif;
+      color: var(--color-grey);
+    }
+
+    &__title {
+      margin: 0;
+      font: 600 40px Jost, sans-serif;
+      color: var(--color-black);
+    }
+
+    &__text {
+      margin-bottom: 40px;
+      font-size: 20px;
+      color: var(--color-grey);
+    }
+
+    &__price {
+      margin-right: 20px;
+      font: 500 30px Jost, sans-serif;
+    }
+
+    &__image {
+      margin: -30px 16px 0 -30px;
+    }
+  }
+
+
+}

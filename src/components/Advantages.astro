@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+import advantagesImage1 from "../images/advantages-image-1.svg";
+import advantagesImage2 from "../images/advantages-image-2.svg";
+import advantagesImage3 from "../images/advantages-image-3.svg";
+import advantagesImage4 from "../images/advantages-image-4.svg";
+---
+
+<section class="advantages">
+  <div class="advantages__container container">
+    <ul class="advantages__list">
+      <li class="advantages__item">
+        <Image src={advantagesImage1} alt="Инструменты" />
+        <p class="advantages__text">Фирменные запчасти у мастеров в наличии</p>
+      </li>
+      <li class="advantages__item">
+        <Image src={advantagesImage2} alt="Инструменты" />
+        <p class="advantages__text">Фирменные запчасти у мастеров в наличии</p>
+      </li>
+      <li class="advantages__item">
+        <Image src={advantagesImage3} alt="Инструменты" />
+        <p class="advantages__text">Фирменные запчасти у мастеров в наличии</p>
+      </li>
+      <li class="advantages__item">
+        <Image src={advantagesImage4} alt="Инструменты" />
+        <p class="advantages__text">Фирменные запчасти у мастеров в наличии</p>
+      </li>
+    </ul>
+  </div>
+</section>

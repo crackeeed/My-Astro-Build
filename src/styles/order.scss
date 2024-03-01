@@ -1,0 +1,22 @@
+.order {
+  padding-bottom: 228px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+  }
+
+  &__wrapper {
+    max-width: 512px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+  }
+}
