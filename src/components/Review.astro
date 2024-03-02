@@ -1,0 +1,109 @@
+---
+import { Image } from "astro:assets";
+import slideImage1 from "../images/slideImage1.png";
+---
+
+<section class="review">
+  <div class="review__container container">
+    <h2 class="review__subtitle subtitle">Нас высоко оценивают</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="slide-top">
+            <Image src={slideImage1} alt="Фото клиента" class="slide-image" />
+            <div class="slide-info">
+              <h5 class="slide-title">Владимир Завертайлов</h5>
+              <p class="slide-data">15 марта 2021</p>
+            </div>
+          </div>
+          <div class="slide-text">
+            Знаю AXIS, как опытных экспертов в области создания визуализаций
+            любой сложности. Умеют четко, грамотно и по делу формулировать
+            мысли. Исследовать вопросы. Капают — глубоко. В 3D визуализации
+            стремятся не заработать на клиенте, а решить проблемы и предподнести
+            проект в выгодном свете!
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-top">
+            <Image src={slideImage1} alt="Фото клиента" class="slide-image" />
+            <div class="slide-info">
+              <h5 class="slide-title">Владимир Завертайлов</h5>
+              <p class="slide-data">15 марта 2021</p>
+            </div>
+          </div>
+          <div class="slide-text">
+            Знаю AXIS, как опытных экспертов в области создания визуализаций
+            любой сложности. Умеют четко, грамотно и по делу формулировать
+            мысли. Исследовать вопросы. Капают — глубоко. В 3D визуализации
+            стремятся не заработать на клиенте, а решить проблемы и предподнести
+            проект в выгодном свете!
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-top">
+            <Image src={slideImage1} alt="Фото клиента" class="slide-image" />
+            <div class="slide-info">
+              <h5 class="slide-title">Владимир Завертайлов</h5>
+              <p class="slide-data">15 марта 2021</p>
+            </div>
+          </div>
+          <div class="slide-text">
+            Знаю AXIS, как опытных экспертов в области создания визуализаций
+            любой сложности. Умеют четко, грамотно и по делу формулировать
+            мысли. Исследовать вопросы. Капают — глубоко. В 3D визуализации
+            стремятся не заработать на клиенте, а решить проблемы и предподнести
+            проект в выгодном свете!
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import Swiper from "swiper";
+  import { Navigation, Pagination } from "swiper/modules";
+
+  import "swiper/css";
+  import "swiper/css/navigation";
+  import "swiper/css/pagination";
+
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    modules: [Navigation, Pagination],
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+    },
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        //centeredSlides: true,
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 35,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>

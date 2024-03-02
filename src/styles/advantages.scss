@@ -1,4 +1,6 @@
 .advantages {
+  padding-bottom: 100px;
+
   &__list {
     display: flex;
     gap: 40px;
@@ -14,5 +16,10 @@
     justify-content: space-between;
     max-width: 210px;
     text-align: center;
+  }
+
+  &__image {
+    max-height: 75px;
+    object-fit: contain;
   }
 }

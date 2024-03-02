@@ -1,0 +1,34 @@
+.review {
+  &__subtitle {
+    margin: 0 0 125px;
+    text-align: center;
+  }
+}
+
+.swiper {
+  &-slide {
+    //max-width: 470px;
+  }
+}
+
+.slide {
+  &-top {
+    display: flex;
+    align-items: center;
+    margin: 0 0 35px;
+  }
+
+  &-image {
+    margin-right: 30px;
+  }
+
+  &-title {
+    margin: 0 0 7px;
+    font: 600 24px Tilda, sans-serif;
+  }
+
+  &-data {
+    margin: 0;
+    font-size: 16px;
+  }
+}
