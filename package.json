@@ -12,7 +12,6 @@
   "dependencies": {
     "@astrojs/check": "^0.5.1",
     "astro": "^4.3.2",
-    "astro-tunnel": "^0.1.2",
     "swiper": "^11.0.7",
     "typescript": "^5.3.3"
   },

@@ -60,14 +60,18 @@ import slideImage1 from "../images/slideImage1.png";
         </div>
       </div>
       <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
 
       <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="swiper-nav-wrapper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-wrapper">
+          <div class="swiper-button-prev">Назад</div>
+          <div class="swiper-button-next">Далее</div>
+        </div>
+      </div>
 
-      <!-- If we need scrollbar -->
       <div class="swiper-scrollbar"></div>
+      <!-- If we need scrollbar -->
     </div>
   </div>
 </section>
@@ -77,28 +81,26 @@ import slideImage1 from "../images/slideImage1.png";
   import { Navigation, Pagination } from "swiper/modules";
 
   import "swiper/css";
-  import "swiper/css/navigation";
-  import "swiper/css/pagination";
+  // import "swiper/css/navigation";
+  //import "swiper/css/pagination";
 
   const swiper = new Swiper(".swiper", {
-    // Optional parameters
     modules: [Navigation, Pagination],
     loop: true,
     pagination: {
       el: ".swiper-pagination",
-      type: "bullets",
     },
 
     breakpoints: {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        //spaceBetween: 20,
         //centeredSlides: true,
       },
       600: {
         slidesPerView: 2,
-        spaceBetween: 35,
+        //spaceBetween: 30,
       },
     },
     navigation: {

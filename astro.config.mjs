@@ -1,8 +1,4 @@
-import { defineConfig } from 'astro/config';
-
-import tunnel from "astro-tunnel";
-
+import { defineConfig } from 'astro/config'
 // https://astro.build/config
-export default defineConfig({
-  integrations: [tunnel()]
-});
+export default defineConfig({});
+
