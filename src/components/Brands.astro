@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import BrandsImage1 from "../images/brands1.png";
+import BrandsImage2 from "../images/brands2.png";
+import BrandsImage3 from "../images/brands3.png";
+import BrandsImage4 from "../images/brands4.png";
+---
+
+<section class="brands">
+  <div class="container brands__container">
+    <ul class="brands__list">
+      <li class="brands__item">
+        <Image src={BrandsImage1} alt="Гугл" class="brands__image"/>
+      </li>
+      <li class="brands__item">
+        <Image src={BrandsImage2} alt="Гугл" class="brands__image"/>
+      </li>
+      <li class="brands__item">
+        <Image src={BrandsImage3} alt="Гугл" class="brands__image"/>
+      </li>
+      <li class="brands__item">
+        <Image src={BrandsImage4} alt="Гугл" class="brands__image"/>
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+.brands {
+  &__list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    object-fit: contain;
+  }
+}
