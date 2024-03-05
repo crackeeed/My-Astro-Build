@@ -1,0 +1,38 @@
+.questions {
+  &__container {
+    display: flex;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+
+  &__left-wrapper {
+    width: 45%;
+  }
+}
+
+.accordion {
+  &__header {
+    background-color: transparent;
+    border: 0;
+  }
+
+  .is-active {
+    .accordion {
+      &__header {
+        border: none;
+      }
+    }
+  }
+
+  &__item {
+    &:last-of-type {
+      .accordion {
+        &__header {
+          border: 2px solid rgba(49, 13, 13, 0.2);
+        }
+      }
+    }
+  }
+}

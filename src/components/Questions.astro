@@ -1,4 +1,60 @@
 ---
-
+import { Accordion, AccordionItem } from "accessible-astro-components";
 ---
-<section>sdfsdf</section>
+
+<sections class="questions">
+  <div class="container questions__container">
+    <div class="questions__left-wrapper">
+      <h2 class="subtitle">Часто задаваемые вопросы</h2>
+      <p class="questions__text">
+        Не нашли ответ на свой вопрос? Оставьте заявку и наш специалист свяжется
+        и ответит на ваш вопрос
+      </p>
+    </div>
+    <div class="questions__right-wrapper">
+      <Accordion>
+        <AccordionItem header="Где почитать отзывы о вас?">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            quasi nobis optio? Qui in quo accusantium debitis sapiente obcaecati
+            magnam incidunt sit. Molestiae exercitationem quibusdam quod
+            veritatis laboriosam est tenetur.
+          </p>
+          <a href="#">Tab to me!</a>
+        </AccordionItem>
+        <AccordionItem header="Сколько времени длится ремонт?">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            quasi nobis optio? Qui in quo accusantium debitis sapiente obcaecati
+            magnam incidunt sit. Molestiae exercitationem quibusdam quod
+            veritatis laboriosam est tenetur.
+          </p>
+        </AccordionItem>
+        <AccordionItem header="Какие виды услуг вы оказываете?">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            quasi nobis optio? Qui in quo accusantium debitis sapiente obcaecati
+            magnam incidunt sit. Molestiae exercitationem quibusdam quod
+            veritatis laboriosam est tenetur.
+          </p>
+        </AccordionItem>
+        <AccordionItem header="Я живу в не в самом городу, сможете приехать?">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            quasi nobis optio? Qui in quo accusantium debitis sapiente obcaecati
+            magnam incidunt sit. Molestiae exercitationem quibusdam quod
+            veritatis laboriosam est tenetur.
+          </p>
+        </AccordionItem>
+        <AccordionItem header="Как производится контроль качества?">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            quasi nobis optio? Qui in quo accusantium debitis sapiente obcaecati
+            magnam incidunt sit. Molestiae exercitationem quibusdam quod
+            veritatis laboriosam est tenetur.
+          </p>
+        </AccordionItem>
+      </Accordion>
+    </div>
+  </div>
+</sections>
